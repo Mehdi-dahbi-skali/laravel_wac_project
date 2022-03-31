@@ -1,0 +1,462 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+     background-color: transparent;
+     border-radius:10px;
+     
+     
+}
+ 
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    margin: 0px;
+    background:black;
+    height: 20px;
+    border-radius: 10px;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+/*start of admin page */
+.admin{
+    width: 100%;
+    height: 100vh;
+    background-color: #c30a08;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 10px solid white;
+}
+
+.admin header{
+    width: 100%;
+    height: fit-content;
+}
+
+.admin header p{
+    font-size: 80px;
+    font-family: American Captain;
+    text-align: center;
+    color:white;
+}
+
+.admin main {
+    width: 100%;
+    height: 100%;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+
+.admin main .crnews{
+    width: 50%;
+    height: 100%;
+}
+
+.admin main .crnews form .title{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+}
+
+.admin main .crnews form .title p{
+    font-size: 50px;
+     color: white;
+     font-family: American Captain;
+}
+
+.admin main .crnews form .title input{
+    border:0px;
+     outline: none;
+     background-color: transparent;
+     border-bottom: 5px solid black;
+     padding-left: 15px;
+     font-size: 50px;
+     font-family: American Captain;
+     color: white;
+     width: 35vh;
+     margin-left: 5vh;
+}
+
+.admin main .crnews form .desc{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.admin main .crnews form .desc p{
+    font-size: 50px;
+    color: white;
+    font-family: American Captain;
+}
+
+.admin main .crnews form .desc textarea{
+    width: 55%;
+    height: 35vh;
+    background-color: transparent;
+    border:4px solid black;
+     outline: none;
+     padding-left: 15px;
+     font-size: 50px;
+     font-family: American Captain;
+     color: white;
+     resize: none;
+     margin-left: 2vh;
+     border-radius: 10px;
+}
+
+.admin main .crnews form .butt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: fit-content;
+}
+
+.admin main .crnews form .butt button{
+    font-size: 35px;
+    font-family: American Captain;
+    color: #c30a08;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: white;
+    border-radius:10px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+input[type="file"]{
+    display: none;
+}
+label{
+    font-size: 35px;
+    font-family: American Captain;
+    color: #c30a08;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: white;
+    border-radius:10px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    position: absolute;
+    margin: 10px;
+    
+}
+
+.admin main .all-News{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-left: 13px solid white;
+    border-right: 13px solid white;
+    border-radius: 6.5px;
+}
+
+.admin main .all-News p{
+   color: white;
+   font-size: 50px;
+   font-family: American Captain;
+}
+
+.admin main .all-News .box{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.admin main .all-News .box p{
+    color: black;
+   font-size: 40px;
+   font-family: American Captain;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.admin main .crinfo{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin main .crinfo form .pnt{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 25px;
+}
+
+.admin main .crinfo form .pnt p{
+    font-size: 40px;
+    font-family: American Captain;
+    color: white;
+}
+
+.admin main .crinfo form .pnt input{
+    border:10px solid black;
+    outline: none;
+    background-color: transparent;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 50px;
+    font-family: American Captain;
+    color: white;
+    width: 10vh;
+    margin-left: 5vh;
+}
+
+.admin main .crinfo form .clas{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.admin main .crinfo form .clas p{
+    font-size: 25px;
+    font-family: American Captain;
+    color: white;
+}
+
+.admin main .crinfo form .clas input{
+    border:10px solid black;
+    outline: none;
+    background-color: transparent;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 50px;
+    font-family: American Captain;
+    color: white;
+    width: 10vh;
+    margin-left: 5vh;
+}
+
+.admin main .crinfo form button {
+    font-size: 35px;
+    font-family: American Captain;
+    color: #c30a08;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: white;
+    border-radius:10px;
+    outline: none;
+    border: 0px;
+    margin: auto;
+    margin: 35px;
+    cursor: pointer;
+}
+
+/*end of admin page */
+/*start of admin2*/
+.admin2{
+    width: 100%;
+    height: 100vh;
+    background-color: #c30a08;
+    display: flex;
+    flex-direction:row;
+}
+
+.admin2 .crnews{
+    width: 50%;
+    height: 100%;
+}
+
+.admin2 .crnews form .title{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+}
+
+.admin2 .crnews form .title p{
+    font-size: 50px;
+     color: white;
+     font-family: American Captain;
+}
+
+.admin2 .crnews form .title input{
+    border:0px;
+     outline: none;
+     background-color: transparent;
+     border-bottom: 5px solid black;
+     padding-left: 15px;
+     font-size: 50px;
+     font-family: American Captain;
+     color: white;
+     width: 35vh;
+     margin-left: 5vh;
+}
+
+.admin2 .crnews form .desc{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.admin2 .crnews form .desc p{
+    font-size: 50px;
+    color: white;
+    font-family: American Captain;
+}
+
+.admin2 .crnews form .desc textarea{
+    width: 55%;
+    height: 35vh;
+    background-color: transparent;
+    border:4px solid black;
+     outline: none;
+     padding-left: 15px;
+     font-size: 50px;
+     font-family: American Captain;
+     color: white;
+     resize: none;
+     margin-left: 2vh;
+     border-radius: 10px;
+}
+
+.admin2 .crnews form .butt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: fit-content;
+}
+
+.admin2 .crnews form .butt button{
+    font-size: 35px;
+    font-family: American Captain;
+    color: #c30a08;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: white;
+    border-radius:10px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/*strap of admin2 next match*/
+
+.admin2 .nextmatch{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border-left: 10px solid white;
+}
+
+.admin2 .crnews form .butt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: fit-content;
+}
+
+
+.admin2 .nextmatch form .title{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+}
+
+.admin2 .nextmatch form .title p{
+    font-size: 50px;
+     color: white;
+     font-family: American Captain;
+}
+
+.admin2 .nextmatch form .title input{
+    border:0px;
+     outline: none;
+     background-color: transparent;
+     border-bottom: 5px solid black;
+     padding-left: 15px;
+     font-size: 50px;
+     font-family: American Captain;
+     color: white;
+     width: 35vh;
+     margin-left: 5vh;
+}
+
+.admin2 .nextmatch form .butt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: fit-content;
+}
+
+.admin2 .nextmatch form .butt button{
+    font-size: 35px;
+    font-family: American Captain;
+    color: #c30a08;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: white;
+    border-radius:10px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/*end of next match*/
+
+/*end of admin2*/

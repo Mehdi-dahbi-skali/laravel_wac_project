@@ -1,0 +1,426 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+     background-color: gray;
+     border-radius:10px;
+     
+     
+}
+ 
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    margin: 0px;
+    background:black;
+    height: 20px;
+    border-radius: 10px;
+}
+
+
+body{
+    background-image: url('../img/wac.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+.acueil{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+/*start of a header*/
+
+header{
+    width: 100%;
+    height: 8.2vh;
+}
+
+header a {
+    color: #c30a08;
+    background-color: white;
+    font-size: 26px;
+    font-family: American Captain;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    text-decoration: none;
+}
+
+/*end of header*/
+
+/*start of main*/
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/*end of main*/
+
+/*start of importantNews*/
+
+.importantNews{
+    width: 56%;
+    height: 100%;
+    margin-left: 8vh;
+}
+
+.contenaireImg{
+    max-width: 112vh;
+    height: 56vh;
+    min-width: 56vh;
+    background-color: black;
+}
+
+.contenaireImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.importantNews .titre{
+    color: black;
+    font-size: 72px;
+    font-family: American Captain;
+    line-break: anywhere;
+}
+
+.importantNews .desc{
+    font-size: 50px;
+    font-family: American Captain;
+    color: white;
+    padding-bottom: 21px;
+    line-break: anywhere;
+}
+
+/*end of importantNews*/
+
+/*start of nextMatch*/
+ 
+.nextMatch{
+    width:44%;
+    margin-top: 5%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.logo{
+      width: 50%;
+      height: fit-content;
+      margin: auto;
+      margin-bottom: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+}
+
+.logo .circleWac{
+    background-color: yellow;
+    width: 11.2vh;
+    height: 12vh;
+    border-radius: 15vh;
+    margin: auto;
+}
+
+.logo .circleWac img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15vh;
+}
+
+.logo .circleAdversaire{
+    background-color: yellow;
+    width: 11.2vh;
+    height: 12vh;
+    border-radius: 15vh;
+    margin: auto;  
+}
+
+.logo .circleAdversaire img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15vh;
+}
+
+.nextMatch .logo p{
+    margin: auto;
+    font-size: 63px;
+    color: #d8ff00;
+    font-family: American Captain;
+}
+
+.nextMatch .nextMatch-text{
+    font-size: 50px;
+    font-family: American Captain;
+    color: black;
+}
+
+.nextMatch .date {
+    font-family: American Captain;
+    font-size: 30px;
+    color: white;
+}
+
+/*end of nextMatch*/
+
+
+/*start of all*/
+
+.all{
+    width: 100%;
+    height: fit-content;
+    background-color: #c30a08;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*start of news*/
+
+.all .news{
+    width: 51.8%;
+    height: fit-content;
+    margin-left: 16vh;
+    margin-top: 16vh;
+}
+
+.all .news .post{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2vh;
+}
+
+.all .news .post .postImg{
+    width: 40vh;
+    height: 40vh;
+    background-color: black;
+    margin-right: 9.92vh;
+}
+
+.all .news .post .postImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.all .news .post .postDesc{
+    width: 56vh;
+    height: 40vh;
+    margin-bottom: 2vh;
+}
+
+.all .news .post .postDesc .postTitle{
+    padding: 0px;
+    font-size: 63px;
+    color: white;
+    font-family: American Captain;
+}
+
+.all .news .post .postDesc .postDesc-2{
+    width: 100%;
+    height: 75%;
+    overflow-y: scroll;
+}
+
+.all .news .post .postDesc-2 p{
+    font-size: 30px;
+    line-break: anywhere;
+    font-family: American Captain;
+    color: black;
+}
+
+/*end of news*/
+
+/*start of info*/
+
+.info{
+    width: 22.2%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.info .point{
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.fixed p{
+    font-size: 40px;
+    font-family: American Captain;
+    color: white;
+}
+
+.info .classement{
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.fixed{
+    display: flex;
+    flex-wrap: nowrap;
+    margin:auto;
+}
+
+.info .classement .fixed p{
+    font-size: 25px;
+}
+
+
+/*end of info*/
+
+/*end of all*/
+
+@media only screen and (max-width: 600px) {
+    .contenaireImg{
+        height: 28vh;
+    }
+    .all .news .post .postImg{
+        margin-right: 0vh;
+    }
+  }
+
+/*start of contact */
+
+ .contact{
+     width: 100%;
+     height: 100vh;
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .contact header{
+     width: 100%;
+     height: fit-content;
+ }
+
+ .contact header p{
+    color: #c30a08;
+    font-family: American Captain;
+    font-size: 80px;
+    text-align: center;
+ }
+
+ .contact main {
+     width: 100%;
+     height: 100%;
+     
+ }
+
+ .contact main form{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     margin-left: 5%;
+
+ }
+ .contact main form .email{
+     width: 100%;
+     height: fit-content;
+     display: flex;
+     flex-direction: row;
+     flex-wrap:nowrap;
+     align-items: center;
+
+    }
+ .contact main form .email p{
+     font-size: 50px;
+     color: white;
+     font-family: American Captain;
+ }   
+
+ .contact main form .email input{
+     border:0px;
+     outline: none;
+     background-color: transparent;
+     border-bottom: 5px solid #c30a08;
+     padding-left: 15px;
+     font-size: 25px;
+     font-family: American Captain;
+     color: white;
+     width: 35vh;
+     margin-left: 5vh;
+ }
+
+.contact main form .message{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    margin-top: 75px;
+}
+
+.contact main form .message textarea{
+    width: 55%;
+    height: 35vh;
+    background-color: transparent;
+    border:4px solid #c30a08;
+     outline: none;
+     padding-left: 15px;
+     font-size: 50px;
+     font-family: American Captain;
+     color: red;
+     resize: none;
+     margin-left: 2vh;
+     border-radius:2px;
+}
+
+.contact main form .message p{
+    font-size: 50px;
+    color: white;
+    font-family: American Captain;
+}
+
+.contact main form .buton{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.contact main form .buton button{
+    font-size: 35px;
+    font-family: American Captain;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: #c30a08;
+    border-radius:10px;
+    outline: none;
+    border: 0px;
+    margin: auto;
+    margin-right: 5%;
+    cursor: pointer;
+}
+/*end of contact */
